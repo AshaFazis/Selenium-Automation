@@ -2,6 +2,7 @@ package org.luma.ecommerce.tests;
 
 import java.io.File;
 
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
@@ -9,6 +10,7 @@ import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
 import org.luma.ecommerce.pages.HomePage;
+import org.luma.ecommerce.utils.DataReader;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -17,6 +19,9 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
+
+
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -29,7 +34,7 @@ public class Base_Tests
 	public WebDriver startDriver() throws IOException
 	{
 		Properties property = new Properties();
-		FileInputStream file = new FileInputStream("C://Selenium//LumaEcommerce//src//main//java//org//luma//ecommerce//resources//GlobalConfiguration.properties");
+		FileInputStream file = new FileInputStream("C:\\Selenium-Automation\\src\\main\\java\\org\\luma\\ecommerce\\resources\\GlobalConfiguration.properties");
 		property.load(file);
 		String browserName = property.getProperty("browser");
 		
@@ -71,10 +76,16 @@ public class Base_Tests
 		
 	}
 	
-	 @AfterMethod(alwaysRun = true)
-	  public void tearDown() 
-	  { 
+	@DataProvider
+	public String[][] testData() throws IOException 
+	{
+	return DataReader.getExcelDdata();
+	}
+	
+    @AfterMethod(alwaysRun = true)
+	public void tearDown() 
+	{ 
 		  driver.quit();
-      }
+    }
 	 
 }

@@ -13,6 +13,20 @@
           <include name="loginNegative_Validation"/>
         </methods>
       </class> <!-- org.luma.ecommerce.testcases.Negative_Validation -->
+      <class name="org.luma.ecommerce.testcases.Login">
+        <methods>
+          <include name="tearDown"/>
+          <include name="login"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- org.luma.ecommerce.testcases.Login -->
+      <class name="org.luma.ecommerce.testcases.E2EPurchase">
+        <methods>
+          <include name="tearDown"/>
+          <include name="purchaseFlow"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- org.luma.ecommerce.testcases.E2EPurchase -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

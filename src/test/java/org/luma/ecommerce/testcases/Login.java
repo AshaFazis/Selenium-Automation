@@ -1,11 +1,16 @@
 package org.luma.ecommerce.testcases;
 
+import java.io.FileInputStream;
 import java.io.IOException;
 
 
 import java.time.Duration;
 import java.util.List;
 
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.luma.ecommerce.pages.AddressPage;
 import org.luma.ecommerce.pages.CartIcon;
 import org.luma.ecommerce.pages.HomePage;
@@ -29,7 +34,7 @@ public class Login extends Base_Tests
 	public static String tee = "Iris Workout Top";
 	
 	
-	@Test(groups = "smoke", dataProvider = "loginData")
+	@Test(groups = "smoke", dataProvider = "testData")
 	public void login(String email,String password) throws IOException, InterruptedException
 	{
         
@@ -40,10 +45,6 @@ public class Login extends Base_Tests
 		
     }
 	
-	@DataProvider(name = "loginData")
-	public Object[][] getData()
-	{
-		return new Object[][] {{"ashafj11@gmail.com", "Ashafj11!"},{"carlpenet123@gmail.com", "Ashafj11!"}};
-	}
+	
 
 }

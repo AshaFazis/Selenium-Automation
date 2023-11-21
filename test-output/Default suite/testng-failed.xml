@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Ecommerce.LumaEcommerce.LoginValidation">
+      <class name="org.luma.ecommerce.testcases.Login">
         <methods>
-          <include name="errorValidation"/>
+          <include name="tearDown"/>
+          <include name="login"/>
           <include name="launchApplication"/>
         </methods>
-      </class> <!-- Ecommerce.LumaEcommerce.LoginValidation -->
+      </class> <!-- org.luma.ecommerce.testcases.Login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
