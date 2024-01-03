@@ -19,7 +19,9 @@ public class Common
 	public WebDriver driver;
 	public String teeName = "Iris Workout Top";
 	public String colour = "Red";
-	
+	public Actions action;
+	public WebDriverWait wait;
+	public JavascriptExecutor js;
 	
 	
 	@FindBy(xpath = "//img[@alt='Loading...']")
@@ -32,42 +34,42 @@ public class Common
 
 	public void actionsBuild(WebElement moveElement)
 	{
-		Actions action = new Actions(driver);
-		action.moveToElement(moveElement).build().perform();
+		 action = new Actions(driver);
+		 action.moveToElement(moveElement).build().perform();
 		
 	}
 	
 	public void actionsClick(WebElement moveElements)
 	{
-		Actions action2 = new Actions(driver);
-		action2.moveToElement(moveElements).click().perform();
+		  action = new Actions(driver);
+		  action.moveToElement(moveElements).click().perform();
 		
 	}
 	public void waitForVisibilityOfElement(By options)
 	{
-		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(25));
+		wait = new WebDriverWait(driver,Duration.ofSeconds(25));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(options));
 		
 	}
 	
 	public void waitForVisibilityOfElementLocated(WebElement elements)
 	{
-		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(25));
+	    wait = new WebDriverWait(driver,Duration.ofSeconds(25));
 		wait.until(ExpectedConditions.visibilityOf(elements));
 		
     }
 	
 	public void javascriptExecutorScrollDown(WebDriver driver)
 	{
-		JavascriptExecutor js = ((JavascriptExecutor)driver);
+	    js = ((JavascriptExecutor)driver);
 		js.executeScript("window.scrollBy(0,1000)"); 
 		
 	}
 	
 	public void javascriptExecutorScrollUp(WebDriver driver)
 	{
-		JavascriptExecutor js2 = ((JavascriptExecutor)driver);
-		js2.executeScript("window.scrollBy(0,-1000)"); 
+		js = ((JavascriptExecutor)driver);
+		js.executeScript("window.scrollBy(0,-1000)"); 
 		
 	}
 }

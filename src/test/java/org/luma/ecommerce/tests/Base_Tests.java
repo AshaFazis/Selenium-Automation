@@ -31,12 +31,15 @@ public class Base_Tests
 	
 	public HomePage home;
 	
+	
+	
 	public WebDriver startDriver() throws IOException
 	{
 		Properties property = new Properties();
 		FileInputStream file = new FileInputStream("C:\\Selenium-Automation\\src\\main\\java\\org\\luma\\ecommerce\\resources\\GlobalConfiguration.properties");
 		property.load(file);
 		String browserName = property.getProperty("browser");
+		String url = property.getProperty("URL");
 		
 		if(browserName.equalsIgnoreCase("chrome"))
 		{
@@ -52,6 +55,7 @@ public class Base_Tests
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
+		driver.get(url);
 		return driver;
 	}
 	
@@ -60,7 +64,6 @@ public class Base_Tests
 	{
 		driver = startDriver();
 		home = new HomePage(driver);
-		home.launchURL();
 		return home;
 	}
 	

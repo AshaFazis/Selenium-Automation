@@ -22,11 +22,6 @@ public class HomePage extends Common
 	WebElement home;
 	
 	
-	
-	public void launchURL()
-	{
-		driver.get("https://magento.softwaretestingboard.com/what-is-new.html");
-	}
 	public LoginPage homePage()
 	{
 		home.click(); //action perform for Homepage

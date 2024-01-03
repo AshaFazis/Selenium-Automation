@@ -29,10 +29,13 @@ public class ProductsMenuPage extends Common
 	@FindBy(xpath = "//a[@id='ui-id-13']//span[text()='Tees']")
 	WebElement womenTees;
 	
+	@FindBy(how = How.XPATH, using = "//span[text()='Sale']")
+	WebElement sale;
 	
 	public void productMenu()
 	{
 		actionsBuild(womenSection);
+		
 	}
 	
 	public void clothCategories() 
@@ -47,6 +50,12 @@ public class ProductsMenuPage extends Common
         
 		
 	}
+	
+	public void productMenu_sales()
+	{
+		actionsClick(sale);
+	}
+	
 	
 	
 	
