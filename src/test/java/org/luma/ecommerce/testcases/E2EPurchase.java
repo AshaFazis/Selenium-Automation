@@ -29,12 +29,11 @@ public class E2EPurchase extends Base_Tests
 			productpage.shoppingOptionsColor();
 			productpage.getProductsList();
 			productpage.getProductNames(tee);
+			productpage.addToCart();
 			
-			CartIcon carticon =  productpage.addToCart();
-	        productpage.itemAddedMessage();
-			
-		
+			CartIcon carticon =  productpage.itemAddedMessage();
 			carticon.cart();
+			
 			AddressPage address = carticon.checkOutButton();
 			address.shippingMethods();
 			

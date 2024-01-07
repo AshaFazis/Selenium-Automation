@@ -28,7 +28,7 @@ public class DataReader
 				{
 					XSSFCell eachCell = eachRow.getCell(j);
 					data[i - 1][j] = eachCell.getStringCellValue();
-					System.out.println(data[i - 1][j]);
+					//System.out.println(data[i - 1][j]);
 				}
 			}
 		return data;

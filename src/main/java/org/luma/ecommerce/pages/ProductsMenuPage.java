@@ -48,13 +48,16 @@ public class ProductsMenuPage extends Common
 		actionsClick(womenTees);
 		return new ProductPage(driver);
         
-		
 	}
 	
-	public void productMenu_sales()
+	public Sales productMenu_sales()
 	{
 		actionsClick(sale);
+		return new Sales(driver);
 	}
+	
+	
+	
 	
 	
 	

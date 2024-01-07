@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.luma.ecommerce.testcases.Login">
+      <class name="org.luma.ecommerce.testcases.Sales_Purchase">
         <methods>
+          <include name="sales_purchase_flow"/>
           <include name="tearDown"/>
-          <include name="login"/>
           <include name="launchApplication"/>
         </methods>
-      </class> <!-- org.luma.ecommerce.testcases.Login -->
+      </class> <!-- org.luma.ecommerce.testcases.Sales_Purchase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

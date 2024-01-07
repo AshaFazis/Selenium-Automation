@@ -18,11 +18,15 @@ public class ThankYouPage extends Common
 	   PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath = "//span[@class='base']")
-	WebElement message;
+	@FindBy(xpath ="//h1[@class='page-title']/span[text()='Thank you for your purchase!']")
+	WebElement thankYouMessage;
+	
+	@FindBy(xpath = "//div[@class='checkout-success']")
+	WebElement orderNumber;
 	
 	public void thankYouMessage()
 	{
-		System.out.println(message.getText());
+		System.out.println(thankYouMessage.getText());
+		System.out.println(orderNumber.getText());
 	}
 }

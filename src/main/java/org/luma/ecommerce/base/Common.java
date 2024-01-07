@@ -54,7 +54,7 @@ public class Common
 	
 	public void waitForVisibilityOfElementLocated(WebElement elements)
 	{
-	    wait = new WebDriverWait(driver,Duration.ofSeconds(25));
+	    wait = new WebDriverWait(driver,Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.visibilityOf(elements));
 		
     }

@@ -1,106 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-03T14:39:41 PST" name="Suite" finished-at="2024-01-03T14:41:38 PST" duration-ms="116726">
+  <suite started-at="2024-01-06T17:03:50 PST" name="Default suite" finished-at="2024-01-06T17:04:28 PST" duration-ms="37916">
     <groups>
-      <group name="smoke">
-        <method signature="Login.login(java.lang.String,java.lang.String)[pri:0, instance:org.luma.ecommerce.testcases.Login@265adfad]" name="login" class="org.luma.ecommerce.testcases.Login"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2024-01-03T14:39:41 PST" name="Test" finished-at="2024-01-03T14:41:38 PST" duration-ms="116726">
-      <class name="org.luma.ecommerce.testcases.E2EPurchase">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:org.luma.ecommerce.testcases.E2EPurchase@3d3e5463]" started-at="2024-01-03T14:40:35 PST" name="launchApplication" finished-at="2024-01-03T14:40:44 PST" duration-ms="9259" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="purchaseFlow()[pri:0, instance:org.luma.ecommerce.testcases.E2EPurchase@3d3e5463]" started-at="2024-01-03T14:40:44 PST" name="purchaseFlow" finished-at="2024-01-03T14:41:20 PST" duration-ms="35226" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- purchaseFlow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.luma.ecommerce.testcases.E2EPurchase@3d3e5463]" started-at="2024-01-03T14:41:20 PST" name="tearDown" finished-at="2024-01-03T14:41:20 PST" duration-ms="445" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- org.luma.ecommerce.testcases.E2EPurchase -->
-      <class name="org.luma.ecommerce.testcases.Login">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:org.luma.ecommerce.testcases.Login@265adfad]" started-at="2024-01-03T14:39:44 PST" name="launchApplication" finished-at="2024-01-03T14:39:58 PST" duration-ms="14144" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:org.luma.ecommerce.testcases.Login@265adfad]" started-at="2024-01-03T14:39:58 PST" name="login" data-provider="testData" finished-at="2024-01-03T14:40:04 PST" duration-ms="5812" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ashafj11@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Ashafj11!]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.luma.ecommerce.testcases.Login@265adfad]" started-at="2024-01-03T14:40:05 PST" name="tearDown" finished-at="2024-01-03T14:40:05 PST" duration-ms="474" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:org.luma.ecommerce.testcases.Login@265adfad]" started-at="2024-01-03T14:40:05 PST" name="launchApplication" finished-at="2024-01-03T14:40:14 PST" duration-ms="9173" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:org.luma.ecommerce.testcases.Login@265adfad]" started-at="2024-01-03T14:40:14 PST" name="login" data-provider="testData" finished-at="2024-01-03T14:40:20 PST" duration-ms="5613" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[carlpenet123@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Ashafj11!]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.luma.ecommerce.testcases.Login@265adfad]" started-at="2024-01-03T14:40:20 PST" name="tearDown" finished-at="2024-01-03T14:40:21 PST" duration-ms="408" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- org.luma.ecommerce.testcases.Login -->
+    <test started-at="2024-01-06T17:03:50 PST" name="Default test" finished-at="2024-01-06T17:04:28 PST" duration-ms="37916">
       <class name="org.luma.ecommerce.testcases.Sales_Purchase">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:org.luma.ecommerce.testcases.Sales_Purchase@64a40280]" started-at="2024-01-03T14:41:20 PST" name="launchApplication" finished-at="2024-01-03T14:41:30 PST" duration-ms="9661" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:org.luma.ecommerce.testcases.Sales_Purchase@18df8434]" started-at="2024-01-06T17:03:50 PST" name="launchApplication" finished-at="2024-01-06T17:04:01 PST" duration-ms="11107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="sales_purchase_flow()[pri:0, instance:org.luma.ecommerce.testcases.Sales_Purchase@64a40280]" started-at="2024-01-03T14:41:30 PST" name="sales_purchase_flow" finished-at="2024-01-03T14:41:37 PST" duration-ms="6980" status="PASS">
+        <test-method signature="sales_purchase_flow()[pri:0, instance:org.luma.ecommerce.testcases.Sales_Purchase@18df8434]" started-at="2024-01-06T17:04:01 PST" name="sales_purchase_flow" finished-at="2024-01-06T17:04:28 PST" duration-ms="26354" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sales_purchase_flow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.luma.ecommerce.testcases.Sales_Purchase@64a40280]" started-at="2024-01-03T14:41:37 PST" name="tearDown" finished-at="2024-01-03T14:41:38 PST" duration-ms="692" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.luma.ecommerce.testcases.Sales_Purchase@18df8434]" started-at="2024-01-06T17:04:28 PST" name="tearDown" finished-at="2024-01-06T17:04:28 PST" duration-ms="408" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- org.luma.ecommerce.testcases.Sales_Purchase -->
-      <class name="org.luma.ecommerce.testcases.Negative_Validation">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:org.luma.ecommerce.testcases.Negative_Validation@e70f13a]" started-at="2024-01-03T14:40:21 PST" name="launchApplication" finished-at="2024-01-03T14:40:28 PST" duration-ms="7703" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="loginNegative_Validation()[pri:0, instance:org.luma.ecommerce.testcases.Negative_Validation@e70f13a]" started-at="2024-01-03T14:40:28 PST" name="loginNegative_Validation" finished-at="2024-01-03T14:40:35 PST" duration-ms="6203" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginNegative_Validation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.luma.ecommerce.testcases.Negative_Validation@e70f13a]" started-at="2024-01-03T14:40:35 PST" name="tearDown" finished-at="2024-01-03T14:40:35 PST" duration-ms="499" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- org.luma.ecommerce.testcases.Negative_Validation -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

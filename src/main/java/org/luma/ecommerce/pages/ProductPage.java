@@ -25,7 +25,7 @@ public class ProductPage extends Common
 	@FindBy(xpath = "//ol[@class='products list items product-items']/li")
 	List<WebElement> teesList;
 	
-	@FindBy(how = How.XPATH, using = "//div[normalize-space()='Size']")
+	@FindBy(how = How.XPATH, using = "//div[@class='block-content filter-content']/div/div[2]")
 	WebElement size;
 	
 	@FindBy(xpath = "//div[normalize-space()='Color']")
@@ -55,6 +55,7 @@ public class ProductPage extends Common
 	//div[normalize-space()='Size']
 	public void shoppingOptionsSize()
 	{
+		
 		waitForVisibilityOfElementLocated(size);
 		actionsClick(size);
 		size.findElement(sizeOption).click();
@@ -93,19 +94,19 @@ public class ProductPage extends Common
 	
     }
 	
-	public CartIcon addToCart()
+	public void addToCart()
 	{
 		item.findElement(addToCart).click();
 		javascriptExecutorScrollUp(driver);
-		return new CartIcon(driver);
 		
 		
 	}
 	
 	
-	public void itemAddedMessage()
+	public CartIcon itemAddedMessage()
 	{
 		System.out.println(addedMessage.getText());
+		return new CartIcon(driver);
 	}
 	
 	

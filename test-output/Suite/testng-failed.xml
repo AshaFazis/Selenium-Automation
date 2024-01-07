@@ -6,20 +6,6 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="org.luma.ecommerce.testcases.Negative_Validation">
-        <methods>
-          <include name="tearDown"/>
-          <include name="launchApplication"/>
-          <include name="loginNegative_Validation"/>
-        </methods>
-      </class> <!-- org.luma.ecommerce.testcases.Negative_Validation -->
-      <class name="org.luma.ecommerce.testcases.Login">
-        <methods>
-          <include name="tearDown"/>
-          <include name="login"/>
-          <include name="launchApplication"/>
-        </methods>
-      </class> <!-- org.luma.ecommerce.testcases.Login -->
       <class name="org.luma.ecommerce.testcases.E2EPurchase">
         <methods>
           <include name="tearDown"/>
