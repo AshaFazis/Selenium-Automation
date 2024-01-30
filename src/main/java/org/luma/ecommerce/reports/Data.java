@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-
+import com.github.dockerjava.core.dockerfile.DockerfileStatement.Add;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -29,6 +29,7 @@ public class Data
 	  extent = new ExtentReports();
 	  extent.attachReporter(reporter);
 	  extent.setSystemInfo("QA", "Asha Fazis");
+	  System.out.println("SubTRACT");
 	  System.out.println("SubTRACT");
 
   }
