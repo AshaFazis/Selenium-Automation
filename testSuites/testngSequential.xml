@@ -5,14 +5,11 @@
 <listener class-name = "org.luma.ecommerce.tests.Listeners"/>
 </listeners>
   <test thread-count="5" name="Test">
-  
-  
     <classes>
       <class name="org.luma.ecommerce.testcases.Login"/>
       <class name="org.luma.ecommerce.testcases.Negative_Validation"/>
       <class name="org.luma.ecommerce.testcases.E2EPurchase"/>
-       <class name="org.luma.ecommerce.testcases.Sales_Purchase"/>
-    
+      <class name="org.luma.ecommerce.testcases.Sales_Purchase"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
