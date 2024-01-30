@@ -29,6 +29,7 @@ public class Data
 	  extent = new ExtentReports();
 	  extent.attachReporter(reporter);
 	  extent.setSystemInfo("QA", "Asha Fazis");
+	  System.out.println("Sub");
   }
 	
   
