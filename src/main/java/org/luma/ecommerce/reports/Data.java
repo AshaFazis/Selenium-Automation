@@ -30,7 +30,7 @@ public class Data
 	  extent.attachReporter(reporter);
 	  extent.setSystemInfo("QA", "Asha Fazis");
 	  System.out.println("SubTRACT");
-	  System.out.println("SubTRACT");
+	  
 
   }
 	
